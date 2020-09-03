@@ -1,0 +1,23 @@
+name: CoinFlip
+version: ${project.version}
+authors: [Baktus_79]
+main: no.vestlandetmc.coinflipper.Coinflipper
+description: Challenge a player to a coinflip duel.
+website: www.vestlandetmc.no
+prefix: CoinFlip
+api-version: 1.15
+depend: [Vault]
+commands:
+  coinflip:
+    description: Challenge a player to a coinflip duel
+    usage: /<command>
+    aliases:
+    - coin
+    - mynt
+    - myntkrone
+    permission: coinflip.use
+    permission-message: §cSorry, but you do not have permission to use this command.
+permissions:
+  coinflip.use:
+    description: Able to use /coinflip command
+    default: op
